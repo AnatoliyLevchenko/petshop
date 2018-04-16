@@ -1,0 +1,14 @@
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\PetShop.Domain.dll.config
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\PetShop.Domain.dll
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\PetShop.Domain.pdb
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\EntityFramework.dll
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\EntityFramework.xml
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.dll
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.pdb
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.csprojResolveAssemblyReference.cache
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\Study\PetShop.WebUI\PetShop.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.Migrations.Abc.resources
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.csproj.GenerateResource.Cache
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.Migrations.Abc1.resources
+D:\Study\PetShop.WebUI\PetShop.Domain\obj\Debug\PetShop.Domain.Migrations.Abc2.resources

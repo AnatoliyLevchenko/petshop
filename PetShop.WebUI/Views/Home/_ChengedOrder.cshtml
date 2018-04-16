@@ -1,0 +1,25 @@
+﻿@using PetShop.WebUI.Infrastructure
+@model IEnumerable<PetShop.WebUI.Models.ProductViewModel>
+
+@foreach (var item in Model)
+{
+    using (Ajax.BeginForm("RemoveProductFromOrder", "Home", new AjaxOptions { UpdateTargetId = "items" }))
+    {
+        <div class="product">
+            @Html.Image(item.Image, new { style = "height:200px; width:300px;" })
+
+            <p style="font-size: 18px;">@Html.DisplayFor(modelItem => item.Title, new { style = "font: 18px 'Bradley Hand', cursive;" })</p>
+
+            <p style="font-size: 14px;"> @Html.DisplayFor(modelItem => item.Description, new { style = "font: 14px 'Bradley Hand', cursive;" })</p>
+            <p style="font-size: 18px;">Price: @Html.DisplayFor(modelItem => item.PricePerItem, new { style = "font: 18px 'Bradley Hand', cursive;" })</p>
+            <input type="submit" id="minus" value="-" onclick="DecrementProduct(this)" />
+            <input type="text" id="quantity" name="quantity" spaceholder="1" />
+            <input type="submit" id="plus" value="+" />
+            @*<span class="glyphicon glyphicon-triangle-left " ></span>
+                <input id ="input" type="number" name="quantity" min="1" max="@item.Quantity" value="1"/>
+                <span class="glyphicon glyphicon-cog" ></span>*@
+            <input type="submit" class="glyphicon glyphicon-trash btn-lg" />
+        </div>
+    }
+    <hr />
+}

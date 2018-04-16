@@ -1,0 +1,15 @@
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\PetShop.BLL.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\PetShop.BLL.pdb
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\AutoMapper.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\Ninject.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\PetShop.Domain.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\System.Web.Mvc.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\EntityFramework.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\PetShop.Domain.pdb
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\AutoMapper.xml
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\Ninject.xml
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\System.Web.Mvc.xml
+D:\Study\PetShop.WebUI\PetShop.BLL\bin\Debug\EntityFramework.xml
+D:\Study\PetShop.WebUI\PetShop.BLL\obj\Debug\PetShop.BLL.csprojResolveAssemblyReference.cache
+D:\Study\PetShop.WebUI\PetShop.BLL\obj\Debug\PetShop.BLL.dll
+D:\Study\PetShop.WebUI\PetShop.BLL\obj\Debug\PetShop.BLL.pdb

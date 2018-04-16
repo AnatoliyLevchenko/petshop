@@ -1,0 +1,27 @@
+﻿@using PetShop.WebUI.Infrastructure
+@model IEnumerable<PetShop.WebUI.Models.ProductViewModel>
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>List of products: @Model.Count()</h2>
+
+<div class="content">
+    <div class="items">
+            @foreach (var item in Model)
+             {
+                 <div class="product">
+                     @Html.Image(item.Image, new {style = "height:200px; width:300px;"})
+
+                     <p style="font-size: 18px;">@Html.DisplayFor(modelItem => item.Title, new {style = "font: 18px 'Bradley Hand', cursive;"})</p>
+                     <p style="font-size: 14px;"> @Html.DisplayFor(modelItem => item.Description, new {style = "font: 14px 'Bradley Hand', cursive;"})</p>
+                     <p style="font-size: 18px;">Price: @Html.DisplayFor(modelItem => item.PricePerItem, new {style = "font: 18px 'Bradley Hand', cursive;"})</p>
+                     <button class="btn">@Html.ActionLink("Add to Basket", "Busket", new { Id = item.Id })</button>
+                 </div>
+                 <hr/>
+             }
+        
+
+    </div>
+</div>

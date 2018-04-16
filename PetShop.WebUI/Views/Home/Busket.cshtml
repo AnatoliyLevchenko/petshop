@@ -1,0 +1,48 @@
+﻿@using PetShop.WebUI.Infrastructure
+@model IEnumerable<PetShop.WebUI.Models.ProductViewModel>
+
+@{
+    ViewBag.Title = "Busket";
+}
+
+<h2>Basket ( @Model.Count() )</h2>
+<hr />
+<div class="content">
+
+    <div class="items" id="items">
+        @foreach (var item in Model)
+        {
+            <div class="product">
+                @Html.Image(item.Image, new { style = "height:200px; width:300px;" })
+
+                <p style="font-size: 18px;">@Html.DisplayFor(modelItem => item.Title, new { name = "Title", style = "font: 18px 'Bradley Hand', cursive;" })</p>
+
+                <p style="font-size: 14px;"> @Html.DisplayFor(modelItem => item.Description, new { style = "font: 14px 'Bradley Hand', cursive;" })</p>
+                <p style="font-size: 18px;">Price:<span id="price">@Html.DisplayFor(modelItem => item.PricePerItem, new { style = "font: 18px 'Bradley Hand', cursive;" })</span></p>
+           
+                <input type="text" id="quantity" name="quantity" placeholder="1" value="1" onchange="qw()"/>
+
+                @*<span class="glyphicon glyphicon-trash btn-lg">@Ajax.ActionLink("Remove", "RemoveProductFromOrder", new {id = item.Id }, new AjaxOptions {UpdateTargetId = "container"})</span>*@
+                <span class="glyphicon glyphicon-trash btn-lg">@Html.ActionLink("Remove", "RemoveProductFromOrder", new { id = item.Id })</span>
+            </div>
+            <hr />
+        }
+    </div>
+    <div>
+        <p>
+            Total: <span id="total">@ViewBag.Price</span> $
+        </p>
+    </div>
+    <div>
+        <span>
+        <a href="/Home/Products" class="btn btn-success">Continue shopping</a>     
+            @if (Model.Any())
+            {
+
+                <a href="/Home/CompletePurchases" class="btn btn-success">Complete purchases</a>
+            }
+        </span>
+    </div>
+
+</div>
+
